@@ -1,0 +1,129 @@
+>>> a = 5
+>>> b = 6
+>>> temp = a
+>>> a = b
+>>> b = temp
+>>> print(a)
+6
+>>> print(b)
+5
+>>> a = 5
+>>> b = 6
+>>> a = a+b
+>>> a
+11
+>>> a=5
+>>> b=9
+>>> a,b=b,a
+>>> print(a)
+9
+>>> print(b)
+5
+>>> import math
+>>> x=math.sqrt(64)
+>>> x
+8.0
+>>> x=math.sqrt(20)
+>>> x
+4.47213595499958
+>>> print(math.floor(2.6))
+2
+>>> print(math.ceil(2.4))
+3
+>>> print(math.pow(3,2))
+9.0
+>>> x=5
+>>> y=8
+>>> z=x+y
+>>> print(z)
+13
+>>> x = input("Enter 1st number")
+Enter 1st number2
+>>> a = int(x)
+>>> y = input("Enter 2nd number")
+Enter 2nd number7
+>>> b = int(y)
+>>> z = a+b
+>>> print(z)
+9
+>>> x = int(input("Enter 1st number"))
+Enter 1st number6
+>>> y = int(input("Enter 2nd number"))
+Enter 2nd number5
+>>> z=x+y
+>>> print(z)
+11
+>>> ch = input('enter a char')
+enter a charpqrst
+>>> print(ch[3])
+s
+>>> result = eval(input('enter an expression'))
+enter an expression4*9
+>>> print(result)
+36
+x=8 [Done in pycharm]
+r=x%2
+if r==0:
+    print("Even")
+else:
+    print("odd")
+print("Bye")
+Output: 
+       Even
+       Bye
+x=3
+r=x%2
+if r==0:
+    print("even")
+    if x>5:
+        print("Great")
+    else:
+        print("Not so great")
+else:
+   print("odd")
+print("bye")
+Output:
+      odd
+      bye
+x=2
+if x==1:
+    print("One")
+elif(x==2):
+    print("Two")
+elif(x==3):
+    print("Three")
+elif(x==4):
+    print("Four")
+Output:
+      Two
+x='Soumya'
+for i in x:
+    print(i)
+Output: S
+        o
+        u
+        m
+        y
+        a
+weekday = int(input("Enter weekday number (1-7) : "))
+if weekday == 1 :
+    print("\nMonday");
+elif weekday == 2 :
+    print("\nTuesday")
+elif(weekday == 3) :
+    print("\nWednesday")
+elif(weekday == 4) :
+    print("\nThursday")
+elif(weekday == 5) :
+    print("\nFriday")
+elif (weekday == 6):
+    print("\nSaturday")
+elif (weekday == 7):
+    print("\nSunday")
+else:
+    print("\nPlease enter any weekday number (1-7)")
+Output:
+      Enter weekday number (1-7) : 5
+      Friday
+
+    
