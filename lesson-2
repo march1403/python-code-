@@ -1,0 +1,158 @@
+>>> nums =[2,3,4,5]
+>>> nums
+[2, 3, 4, 5]
+>>> nums[0]
+2
+>>> nums[6]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> names = ['sara','shreya','anu']
+>>> names
+['sara', 'shreya', 'anu']
+>>> mil = [nums,names]
+>>> mil
+[[2, 3, 4, 5], ['sara', 'shreya', 'anu']]
+>>> nums.append(10)
+>>> nums
+[2, 3, 4, 5, 10]
+>>> nums.insert(8,9)
+>>> nums
+[2, 3, 4, 5, 10, 9]
+>>> nums.insert(2,0)
+>>> nums
+[2, 3, 0, 4, 5, 10, 9]
+>>> nums.remove(10)
+>>> nums
+[2, 3, 0, 4, 5, 9]
+>>> num.pop(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'num' is not defined. Did you mean: 'nums'?
+>>> nums.pop(1)
+3
+>>> nums
+[2, 0, 4, 5, 9]
+>>> nums.pop()
+9
+>>> nums
+[2, 0, 4, 5]
+>>> del nums[1:]
+>>> nums
+[2]
+>>> nums.extend[0,3,4,5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> nums.extend([0,3,4,5])
+>>> nums
+[2, 0, 3, 4, 5]
+>>> min(nums)
+0
+>>> max(nums)
+5
+>>> sum(nums)
+14
+>>> num.sort()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'num' is not defined. Did you mean: 'nums'?
+>>> nums.sort()
+>>> nums
+[0, 2, 3, 4, 5]
+>>> tup = (11,12,13,14)
+>>> tup
+(11, 12, 13, 14)
+>>> tup[1]
+12
+>>> s ={2,3,4,5,6,7}
+>>> s
+{2, 3, 4, 5, 6, 7}
+>>> data = { 1:'Soumya', 2:'Joseph', 3:'Susan' }
+>>> data
+{1: 'Soumya', 2: 'Joseph', 3: 'Susan'}
+>>> data[2]
+'Joseph'
+>>> data.get(1)
+'Soumya'
+>>> print(data.get(8))
+None
+>>> print(data.get(3))
+Susan
+>>> keys = ['Soumya','Joseph','Susan']
+>>> values = ['ice-cream','namkeen','rasmalai']
+>>> data = dict(zip(keys,values))
+>>> data
+{'Soumya': 'ice-cream', 'Joseph': 'namkeen', 'Susan': 'rasmalai'}
+>>> data ['anu']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'anu'
+>>> data['anu'] = 'Cakes'
+>>> data
+{'Soumya': 'ice-cream', 'Joseph': 'namkeen', 'Susan': 'rasmalai', 'anu': 'Cakes'}
+>>> items = { 'doctor':'medicines','software engineer':'technology','actor':'drama'}
+>>> items
+{'doctor': 'medicines', 'software engineer': 'technology', 'actor': 'drama'}
+>>> print("Hello world")
+Hello world
+>>> num = 9
+>>> id(num)
+140734436406312
+>>> name = 'Sara'
+>>> id(name)
+2018606538096
+>>> a=10
+>>> b=a
+>>> b
+10
+>>> id(a)
+140734436406344
+>>> id(b)
+140734436406344
+>>> num =2.5
+>>> type(num)
+<class 'float'>
+>>> num = 6+j
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'j' is not defined
+>>> num = 6+8j
+>>> type(num)
+<class 'complex'>
+>>> a=6
+>>> b=int(a)
+>>> type(b)
+<class 'int'>
+>>> k= float(b)
+>>> k
+6.0
+>>> bool = b<k
+>>> bool
+False
+>>> l = [2,3,4]
+>>> type(l)
+<class 'list'>
+>>> s = {6,7,8}
+>>> type(s)
+<class 'set'>
+>>> t = (77,98,87)
+>>> type(t)
+<class 'tuple'>
+>>> x=4
+>>> x
+4
+>>> x+=2
+>>> x
+6
+>>> x*=2
+>>> x
+12
+>>> a=2
+>>> b=3
+>>> a<8 and b>1
+True
+>>> bin(2)
+'0b10'
+>>> bin(12)
+'0b1100'
