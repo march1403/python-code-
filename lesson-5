@@ -1,0 +1,176 @@
+import calendar
+y=2023
+m=5
+print(calendar.month(y,m))
+Output:
+Mo Tu We Th Fr Sa Su
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+ 15 16 17 18 19 20 21
+ 22 23 24 25 26 27 28
+ 29 30 31
+ import calendar
+print("Enter Year: ")
+yy = input()
+print("\nEnter Month Number (1-12): ")
+mm = input()
+y = int(yy)
+m = int(mm)
+print("\n", calendar.month(y, m))
+Output:
+Enter Year: 
+2023
+Enter Month Number (1-12): 
+6
+    June 2023
+Mo Tu We Th Fr Sa Su
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25 
+26 27 28 29 30
+def update(n):
+    return n*2
+nums = [3,2,6,8,4,9]
+evens = list(filter(lambda n:n%2==0,nums))
+doubles = list(map(lambda n:n*2,evens))
+print(doubles)
+Output:
+[4, 12, 16, 8]
+from functools import reduce
+def add_all(a,b):
+    return a+b
+nums = [3,2,6,8,4,9]
+evens = list(filter(lambda n:n%2==0,nums))
+doubles = list(map(lambda n:n*2,evens))
+print(doubles)
+sum = reduce(lambda a,b:a+b,doubles)
+print(sum)
+Output:
+[4, 12, 16, 8]
+40
+my_list = [1, 2, 3, 4, 5]
+print(my_list[-1:])
+print(my_list[-1:-4:-1])
+Output:
+[5]
+[5, 4, 3]
+f = open("myfile.txt", "w")
+list1 = [1,2,3,4,5,6]
+list2 = [10,12,13,14,15]
+
+if len(list1) == len(list2):
+    list1.sort()
+    list2.sort()
+
+    equal = True
+    for a in range(0, len(list1)):
+        if list1[a] == list2[a]:
+            continue
+        else:
+            equal = False
+
+    if equal:
+        print("Both lists are equal")
+    else:
+        print("Lists are not equal")
+
+else:
+    print("Lists are not equal")
+Output:
+Lists are not equal
+import datetime
+from datetime import date
+
+ct = datetime.datetime.now().timestamp()
+
+days = int(input("Enter number of days: ")) * 24 * 60 * 60
+
+timestamp = date.fromtimestamp(days + ct)
+print("Date =", timestamp)
+Output:
+Enter number of days: 5
+Date = 2023-03-28
+a = int(input("Enter a number"))
+if a >= 0:
+    print("Number is positive")
+else:
+    print("Number is negative")
+Output:
+Enter a number 2
+Number is positive
+my_tuple = (1, 2, 3, 4, 5)
+my_list = list(my_tuple)
+print(my_list)
+Output:
+[1, 2, 3, 4, 5]
+f = open("Lab 4/demofile.txt", "r")
+print(f.read())
+file = open("Lab 4/demofile.txt", 'r')
+Lines = file.readlines()
+count = 0
+# Strips the newline character
+for line in Lines:
+    count += 1
+    print("Line{}: {}".format(count, line.strip()))
+import os
+path = "C:/Users/Hp/OneDrive/Desktop/OS.txt"
+def file_exists():
+    print(os.access(path, os.F_OK))
+def file_read():
+    print(os.access(path, os.R_OK))
+def file_write():
+def path_execution():
+    print(os.access(path, os.X_OK))
+file_write()
+file_read()
+file_exists()
+path_execution()
+import pandas as pd  
+lst = ['Soumya', 'Joseph','Susan','Merlin']
+dframe = pd.DataFrame(lst)  
+print(dframe)  
+Output:
+0  Soumya
+1  Joseph
+2   Susan
+3  Merlin
+try:
+  print(a)
+except:
+  print("An exception occurred")
+Output:
+An exception occurred
+def add(a, b):
+    try:
+        result = a + b
+        print("Your answer is :", result)
+    except ZeroDivisionError:
+        print("Sorry ! You have an Error ")
+add(3, 2)
+Output:
+Your answer is : 5
+try:
+	age = 17
+	if age <= 18:
+		raise ValueError("You are not Eligible")
+	else:
+		print("You are Eligible")
+except ValueError as e:
+		print(e)
+Output:
+You are not eligible 
+import operator
+from functools import reduce
+from itertools import accumulate
+def sumOfList(a, b):
+    sum = a + b
+    return sum
+List = [12,24,47,56,83]
+a = (reduce(sumOfList, List))
+print(a)
+b = list(accumulate(List, operator.add))
+print(b)
+Output:
+222
+[12, 36, 83, 139, 222]
