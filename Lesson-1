@@ -1,0 +1,52 @@
+>>> 3+4
+7
+>>> 9-8
+1
+>>> 8/2
+4.0
+>>> 4*8
+32
+>>> 8-10+4
+2
+>>> 8+6*9
+62
+>>> (4+5)/9
+1.0
+>>> 10%3
+1
+>>> 'Soumya'
+'Soumya'
+>>> print('Soumya')
+Soumya
+>>> 'soumya'+'soumya'
+'soumyasoumya'
+>>> 10*'soumya'
+'soumyasoumyasoumyasoumyasoumyasoumyasoumyasoumyasoumyasoumya'
+>>> print('soumya\njoseph')
+soumya
+joseph
+>>> x = 2
+>>> x+3
+5
+>>> y=3
+>>> x+y
+5
+>>> x+19
+21
+>>> _+y
+24
+>>> name='SATI'
+>>> name
+'SATI'
+>>> name +'college'
+'SATIcollege'
+>>> name[0]
+'S'
+>>> name[-1]
+'I'
+>>> name[0:2]
+'SA'
+>>> name[2:8]
+'TI'
+>>> 'my'+name[:9]
+'mySATI'
