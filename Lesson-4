@@ -1,0 +1,136 @@
+my_str = "radar"
+my_str = my_str.casefold()
+rev_str = reversed(my_str)
+if list(my_str) == list(rev_str):
+    print("The string is a palindrome")
+else:
+    print("The string is not a palindrome")
+Output:
+      The string is a palindrome
+def add(num1, num2):
+    return num1 + num2
+def subtract(num1, num2):
+    return num1 - num2
+def multiply(num1, num2):
+    return num1 * num2
+def divide(num1, num2):
+    return num1 / num2
+print("Please select operation -\n" \
+        "1. Add\n" \
+        "2. Subtract\n" \
+        "3. Multiply\n" \
+        "4. Divide\n")
+select = int(input("Select operations form 1, 2, 3, 4 :"))
+
+number_1 = int(input("Enter first number: "))
+number_2 = int(input("Enter second number: "))
+
+if select == 1:
+    print(number_1, "+", number_2, "=",
+          add(number_1, number_2))
+
+elif select == 2:
+    print(number_1, "-", number_2, "=",
+          subtract(number_1, number_2))
+
+elif select == 3:
+    print(number_1, "*", number_2, "=",
+          multiply(number_1, number_2))
+
+elif select == 4:
+    print(number_1, "/", number_2, "=",
+          divide(number_1, number_2))
+else:
+    print("Invalid input")
+Output:
+      Please select operation -
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+
+Select operations form 1, 2, 3, 4 :3
+Enter first number: 6
+Enter second number: 2
+6 * 2 = 12
+def pypart(n):
+    if n==0:
+        return
+    else:
+        pypart(n-1)
+        print("* "*n)
+n = 5
+pypart(n)
+Output:
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+num=7
+for i in range(2,num):
+    if num % i == 0:
+        print("Not prime")
+    break
+else:
+    print("Prime")
+Output: 
+      Prime
+from numpy import *
+arr = array([1,2,3,4])
+print(arr)
+Output:
+      [1 2 3 4]
+from numpy import *
+arr = array([1,2,3,4])
+print(arr.dtype)
+Output:
+      int64
+ef greet():
+    print("Hello")
+    print("Good Morning")
+def add(x,y):
+    c=x+y
+    return c
+greet()
+result = add(5,4)
+print(result)
+Output:
+Hello
+Good Morning
+9
+def factorial(n):
+    return 1 if (n == 1 or n == 0) else n * factorial(n - 1);
+num = 5;
+print("Factorial of", num, "is",factorial(num))
+Output:
+Factorial of 5 is 120
+def square(a):
+    return a*a
+result = square(5)
+print(result)
+Output:
+      25
+ f = lambda a:a*a
+result = f(6)
+print(result)
+Output:
+      36
+f=lambda a,b:a+b
+result = f(5,6)
+print(result)
+Output:
+      11
+def is_even(n):
+    return n%2==0
+nums = [3,2,4,5,6,7]
+evens = list(filter(is_even,nums))
+print(evens)
+Output: 
+[2, 4, 6]
+nums = [20,30,40,50,60,70]
+evens = list(filter(lambda n: n%2==0,nums))
+print(evens)
+Output:
+[20, 30, 40, 50, 60, 70]
+  
